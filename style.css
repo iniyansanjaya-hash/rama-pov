@@ -1,0 +1,22 @@
+/* Modifikasi pada transisi layar kunci */
+.lock-screen {
+    z-index: 3;
+    background: rgba(0,0,0,0.15);
+    padding: 40px 20px;
+    touch-action: none; /* Mencegah bentrok scroll bawaan browser HP */
+}
+.lock-screen.swiped-up {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+/* Batang Home Indicator khas iPhone modern di bagian bawah */
+.ios-home-indicator-bar {
+    width: 140px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
