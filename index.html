@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 AU - Lock Screen Only</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://googleapis.com">
+</head>
+<body>
+
+    <div class="iphone-15">
+        <!-- Dynamic Island -->
+        <div class="dynamic-island"></div>
+
+        <!-- ================= HALAMAN 1: LOCK SCREEN ================= -->
+        <!-- Area ini mendengarkan sentuhan/geseran untuk membuka kunci -->
+        <div class="screen lock-screen" id="lockScreen">
+            <!-- Status Bar -->
+            <div class="status-bar">
+                <span class="provider">Telkomsel</span>
+                <div class="status-icons">📶 4G 🔋 85%</div>
+            </div>
+
+            <!-- Jam & Tanggal Real-Time -->
+            <div class="ios-time-wrapper">
+                <p id="iosDate">Memuat tanggal...</p>
+                <h1 id="iosClock">00:00</h1>
+            </div>
+
+            <!-- Widget Music Player -->
+            <div class="ios-widget music-widget">
+                <div class="music-info">
+                    <div class="music-cover">🎵</div>
+                    <div>
+                        <h4>Hari Yang Baik Untuk Berbohong</h4>
+                        <p>Hindia</p>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <span>⏮️</span> <span>⏸️</span> <span>⏭️</span>
+                </div>
+            </div>
+
+            <!-- Kartu Notifikasi WhatsApp dari Yan -->
+            <div class="notification-card" id="waNotification">
+                <div class="noti-header">
+                    <span>💬 WHATSAPP</span>
+                    <span>Sekarang</span>
+                </div>
+                <div class="noti-body">
+                    <h4>Yan 🎂</h4>
+                    <p>"aku udah sampai nih, kamu dimana?"</p>
+                </div>
+            </div>
+
+            <!-- Batang Geser iOS di Paling Bawah -->
+            <div class="ios-home-indicator-bar"></div>
+            <div class="bottom-hint">Geser ke atas untuk membuka</div>
+        </div>
+
+        <!-- ================= HALAMAN 2: PASSCODE SCREEN ================= -->
+        <div class="screen passcode-screen" id="passcodeScreen">
+            <p class="passcode-msg">Masukkan Sandi</p>
+            <div class="dots-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            
+            <div class="ios-keypad">
+                <button class="num-key" onclick="pressNum('1')">1</button>
+                <button class="num-key" onclick="pressNum('2')">2</button>
+                <button class="num-key" onclick="pressNum('3')">3</button>
+                <button class="num-key" onclick="pressNum('4')">4</button>
+                <button class="num-key" onclick="pressNum('5')">5</button>
+                <button class="num-key" onclick="pressNum('6')">6</button>
+                <button class="num-key" onclick="pressNum('7')">7</button>
+                <button class="num-key" onclick="pressNum('8')">8</button>
+                <button class="num-key" onclick="pressNum('9')">9</button>
+                <button class="label-key" onclick="cancelPasscode()">Batal</button>
+                <button class="num-key" onclick="pressNum('0')">0</button>
+                <button class="label-key" onclick="deleteNum()">Hapus</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                                         </html>
+      
